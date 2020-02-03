@@ -1,4 +1,6 @@
 import h5py
+
+#Provide the filename for hdf database. Here the database contains NREL WIND data
 f = h5py.File('wtk_2007.h5', 'r')
 list(f.keys())
 dset = f['power']
