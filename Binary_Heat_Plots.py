@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 
 def filterdays(data):
-    days=3
+    days=2
     start=-1
     counter=0
     for i, j in enumerate(data):
@@ -75,7 +75,7 @@ for j in range(6):
         input_data.pop(0)
         input_data = [float(i) for i in input_data]
 
-        heatmapdata = binary_data_conv(input_data[years[j]: years[j + 1]], 0.25)
+        heatmapdata = binary_data_conv(input_data[years[j]: years[j + 1]], 0.5)
         for l in range(20):
             data.append(heatmapdata)
 
